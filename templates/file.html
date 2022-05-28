@@ -1,14 +1,38 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <meta charset='utf-8'>
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
-    <title>Page Title</title>
+    <title>Sign Uploader</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
     <script src='main.js'></script>
 </head>
+
 <body>
-    <h1>File page</h1>
+    <div class="row">
+        <div class="col">
+
+            <h1>Upload Traffic Sign</h1>
+            <hr>
+
+            <form action="/upload-image" method="POST" enctype="multipart/form-data">
+
+                <div class="form-group">
+                    <label>Select image</label>
+                    <div class="custom-file">
+                        <input type="file" class="custom-file-input" name="image" id="image">
+                        <label class="custom-file-label" for="image">Select image...</label>
+                    </div>
+                </div>
+                <button type="submit" class="btn btn-primary">Upload</button>
+            </form>
+
+        </div>
+    </div>
+    </div>
+    <img src="{{ url_for('send_uploaded_file', filename=uploaded_image) }}" />
 </body>
+
 </html>
