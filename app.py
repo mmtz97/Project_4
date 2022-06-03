@@ -12,8 +12,7 @@ app.config['UPOADED_IMAGE'] = join(dirname(realpath(__file__)), 'static/uploads/
 # create route that renders index.html template
 @app.route("/")
 def index():
-    return render_template("index.html", 
-    text="Serving up cool text from the Flask server!!")
+    return render_template("index.html")
 
 # Show a list of images.
 @app.route("/files")
