@@ -71,10 +71,10 @@ img:last-of-type {
   box-shadow: 0 0 8px rgba(0, 0, 0, .7);
 }
 
-.slide:nth-child(2n) .title {
+/* .slide:nth-child(2n) .title {
   margin-left: 0;
   margin-right: auto;
-}
+} */
 
 .slide:nth-child(2n+1) .title {
   margin-left: auto;
