@@ -109,12 +109,12 @@ img:last-of-type {
 }
 
 #slide2 {
-  background-image: url("/static/images/standing_tall.jpeg");
+  background: #222;
   z-index:2;
 }
 
 #slide3:before {
-  background-image: url("/static/images/https://lorempixel.com/640/480/abstract/5/");
+  background-image: url("/static/images/standing_tall.jpeg");
   transform: translateZ(-1px) scale(2);
 }
 
