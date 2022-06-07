@@ -12,12 +12,6 @@ app.config['UPOADED_IMAGE'] = join(dirname(realpath(__file__)), 'static/uploads/
 # create route that renders index.html template
 @app.route('/', methods=['GET', 'POST'])
 def index():
-    # if request.method == "POST":
-    #     print("rcvd post request from main page")
-    #     if request.files:
-    #         image = request.files["image"]
-    #         image.save(os.path.join(app.config["UPOADED_IMAGE"], image.filename))
-    #         return render_template("index.html", uploaded_image=image.filename)
     return render_template("index.html")
 
 
@@ -51,10 +45,26 @@ def upload_image():
 
 
 # Route for displaying uploaded picture
+# no longer needed - keeping for the time being will delete in cleanup for turn in
+# TODO: Delete me later
 @app.route('/uploads/<filename>')
 def send_uploaded_file(filename=''):
     from flask import send_from_directory
     return send_from_directory(app.config["UPOADED_IMAGE"], filename)
+
+# TODO: Need a route to return a string
+# Will be streamlined into the upload route once it is working
+# Should return accucry of model based on picture.
+def testReturn():
+    return "Hello Worlds"
+
+@app.route('/test', methods=['GET', 'POST'])
+def test():
+    print("Do you see me?")
+    test_msg = "Hello worldddddddds"
+    return render_template("test.html", test_msg=test_msg)
+
+
 
 
 if __name__ == "__main__":

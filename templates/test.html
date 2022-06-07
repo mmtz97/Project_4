@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <!-- <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script> -->
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script type=text/javascript>
+        $(function() {
+          $('a#test').on('click', function(e) {
+            e.preventDefault()
+            $.getJSON('/testReturn,
+                function(data) {
+              //do nothing
+            });
+            return true;
+          });
+        });
+</script>
+</head>
+
+<body>
+    <h1> Test</h1>
+    <div class='container'>
+            <form action="/test" method="post">
+                <a href=# id=test><button class='btn btn-default'>Test</button></a>
+            </form>
+    <p>This is here: {{ test_msg }}</p>
+    </div>
+</body>
+
+</html>
