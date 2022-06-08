@@ -37,9 +37,10 @@ def upload_image():
         if request.files:
             image = request.files["image"]
             image.save(os.path.join(app.config["UPOADED_IMAGE"], image.filename))
+            test = os.path.join(app.config["UPOADED_IMAGE"], image.filename)
             text = 'I think I found me'
             print("I am in the upload")
-            return render_template("index.html", uploaded_image=image.filename, value1 = adding(image.filename))
+            return render_template("index.html", uploaded_image=image.filename, value1 = adding(test))
     print("I am before second return")        
     return render_template("index.html", value1 = text)
 
