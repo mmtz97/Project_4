@@ -9,28 +9,17 @@
     <!-- <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
     <script src='main.js'></script> -->
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-    <script type=text/javascript>
-        $(function() {
-          $('a#test').on('click', function(e) {
-            e.preventDefault()
-            $.getJSON('/testReturn,
-                function(data) {
-              //do nothing
-            });
-            return true;
-          });
-        });
-</script>
-</head>
+    <script src="/static/js/upload.js"></script>
+</html>
 
 <body>
-    <h1> Test</h1>
-    <div class='container'>
-            <form action="/test" method="post">
-                <a href=# id=test><button class='btn btn-default'>Test</button></a>
-            </form>
-    <p>This is here: {{ test_msg }}</p>
-    </div>
+    <h1>File Upload</h1>
+    <form method="POST" action="" enctype="multipart/form-data">
+      <p><input type="file" name="file"></p>
+      <p><input type="submit" value="Submit"></p>
+    </form>
+
+
 </body>
 
 </html>
