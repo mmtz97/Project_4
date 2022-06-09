@@ -103,22 +103,22 @@ img:last-of-type {
 }
 
 #slide1:before {
-  background: #222;
+  background-image: url("/static/images/interstate-40-in-california-near-needles-usa-royalty-free-image-958412190-1567697186.jpeg");
   transform: translateZ(-1px) scale(2);
 }
 
 #slide2 {
-  background-image: url("/static/images/interstate-40-in-california-near-needles-usa-royalty-free-image-958412190-1567697186.jpeg");
+  background: #222;
   z-index:2;
 }
 
 #slide3:before {
-  background: #222;
+  background-image: url("/static/images/standing_tall.jpeg");
   transform: translateZ(-1px) scale(2);
 }
 
 #slide4 {
-  background-image: url("/static/images/standing_tall.jpeg");
+  background: #222;
 }
 
 p-1 {
