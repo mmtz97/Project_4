@@ -5,6 +5,7 @@ import os
 from os.path import join, dirname, realpath
 from pathlib import Path
 from PIL import Image, ExifTags
+import test_sign as sign
 
 # create instance of Flask app
 app = Flask(__name__)
@@ -40,7 +41,7 @@ def upload_image():
             test = os.path.join(app.config["UPOADED_IMAGE"], image.filename)
             text = 'I think I found me'
             print("I am in the upload")
-            return render_template("index.html", uploaded_image=image.filename, value1 = adding(test))
+            return render_template("index.html", uploaded_image=image.filename, value1 = sign.predict(test))
     print("I am before second return")        
     return render_template("index.html", value1 = text)
 
