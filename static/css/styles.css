@@ -1,5 +1,4 @@
 
-
 html {
   height: 100%;
   overflow: hidden;
@@ -71,14 +70,14 @@ img:last-of-type {
   box-shadow: 0 0 8px rgba(0, 0, 0, .7);
 }
 
-/* .slide:nth-child(2n) .title {
-  margin-left: 0;
-  margin-right: auto;
-} */
-
-.slide:nth-child(2n+1) .title {
+.slide:nth-child(2n) .title {
   margin-left: auto;
   margin-right: 0;
+}
+
+.slide:nth-child(2n+1) .title {
+  margin-left: 0;
+  margin-right: auto;
 }
 
 .slide, .slide:before {
@@ -104,20 +103,24 @@ img:last-of-type {
 }
 
 #slide1:before {
-  background-image: url("/static/images/interstate-40-in-california-near-needles-usa-royalty-free-image-958412190-1567697186.jpeg");
+  background: #222;
   transform: translateZ(-1px) scale(2);
 }
 
 #slide2 {
-  background: #222;
+  background-image: url("/static/images/interstate-40-in-california-near-needles-usa-royalty-free-image-958412190-1567697186.jpeg");
   z-index:2;
 }
 
 #slide3:before {
-  background-image: url("/static/images/standing_tall.jpeg");
+  background: #222;
   transform: translateZ(-1px) scale(2);
 }
 
 #slide4 {
-  background: #222;
+  background-image: url("/static/images/standing_tall.jpeg");
+}
+
+p-1 {
+  color: #fff;
 }
