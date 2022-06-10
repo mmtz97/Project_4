@@ -10,9 +10,8 @@ Table of Contents
     - [Level 3 Conditional Driving Automation](#level-3-conditional-driving-automation)
     - [Level 4 High Driving Automation](#level-4-high-driving-automation)
     - [Level 5 Full Driving Automation](#level-5-full-driving-automation)
-  - [Problem](#problem)
-- [Solving the problem](#solving-the-problem)
-  - [Techniques used](#techniques-used)
+  - [Solving the problem](#solving-the-problem)
+  - [Techniques Used](#techniques-used)
 
 # Introduction
 Self driving cars and driver assistance is a major field of study in technology today.  Almost all major automakers are looking to improve or develop safer cars or to automate them to drive themselves.  Our project focuses on this problem.  We are developing a Nerual Network that will be able to read and distiguish different road signs and thus improving accuracy.
@@ -34,9 +33,14 @@ The main difference between Level 3 and 4 is that if there is a system failure t
 At this level vehicles do not require any human attention.  These cars will no have any driver features such as steering wheels, braking, or gas pedals.
 
 
-## Problem
+
+## Solving the problem
+To solve this problem we used the GTSRB - (German Traffic Sign Recognition Benchmark) dataset to train our model.  We used over 50,000 images to train the model and tested it vs about 12,000 images.  This is a very time and resource intensive task and each time we trained the model it would take over an hour to complete.
 
 
-# Solving the problem
+![LessDropAcc](LessDropAcc.JPG "Title")
+![LessDropLoss](LessDropLoss.JPG "Title")
+![MoreDropAcc](MoreDropAcc.png "Title")
+![MoreDropLoss](MoreDropLoss.png "Title")
 
-## Techniques used
+## Techniques Used

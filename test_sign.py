@@ -20,7 +20,7 @@ def predict(image_file):
     # dimensions of our images
     img_width, img_height = 30, 30
 
-    model = load_model('traffic_classifier.h5')
+    model = load_model('traffic_classifierMoreDrop.h5')
     model.compile(loss='binary_crossentropy',
                 optimizer='rmsprop',
                 metrics=['accuracy'])
